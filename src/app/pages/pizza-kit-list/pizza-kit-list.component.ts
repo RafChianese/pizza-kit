@@ -28,7 +28,8 @@ export class PizzaKitListComponent implements OnInit {
       id: product._id,  // Assicurati che l'ID sia presente
       name: product.name,
       price: product.price,
-      quantity: 1  // Quantità di default
+      quantity: 1,
+      image: product.image  // Quantità di default
     };
     
     this.cartService.addToCart(item);

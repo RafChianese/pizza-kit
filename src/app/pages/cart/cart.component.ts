@@ -31,7 +31,7 @@ export class CartComponent implements OnInit {
     if (quantity > 0) {
       this.cartService.updateQuantity(productId, quantity);
     }
-  }
+  }  
 
   // Rimuove un prodotto dal carrello
   removeFromCart(productId: string): void {
